@@ -1,0 +1,31 @@
+<htm>
+<head>
+     <script>
+		function factorial(){
+			var n=parseInt(prompt("Enter The Number : "));
+                        var f=parseInt(1);
+			var i=parseInt(1);
+			for(i=parseInt(1);i<=n;i++){
+				f=f*i;
+			}
+		       document.write("Factorial of  "+n + " is :"+f );
+		}
+		function fibbnoic(){
+			var n=parseInt(prompt("Enter The Number : "));
+			var a=0;
+			var b=1;
+			var i;
+			for( i=1;i<=n;i++){
+          			if(i==1){ document.write(1+"<br>");}
+				var c=a+b;
+                                document.write(c+"<br>");
+				a=b;
+				b=c;
+			}	
+		}
+     </script>
+</head>
+<body onload="fibbnoic();">
+
+</body>
+</html>

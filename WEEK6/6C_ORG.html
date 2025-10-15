@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+  let name = prompt("Enter your name:");
+  alert("Hello, " + name);
+</script>
+
+<script>
+  function showInput() {
+    let value = document.getElementById("userInput").value;
+    alert("You entered: " + value);
+  }
+</script>
+</head>
+
+<body>
+<input type="text" id="userInput" />
+<button onclick="showInput()">Submit</button>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+		<script>
+			function check(){
+				var name=document.getElementById("name").value;
+				var num=document.getElementById("ph_num").value;
+				var email=document.getElementById("email").value;
+				if((name[0]<65&&name[0]>91)||(name[0]<95&&name[0]>121)||name.length<6){
+					alert("Starting Letter Must Be Alphabet and must greater than 6 charecters");
+					return;
+				}
+				if(num.length<10||num.length>10){
+				  alert("inValid NUmber");
+					return;
+				}
+                               else{
+                                    
+				for(let i=0;i<num.length;i++){
+          				if(num[i]!='0'&&num[i]!='1'&&num[i]!='2'&&num[i]!='3'&&num[i]!='4'
+                                           &&num[i]!='5'&&num[i]!='6'&&num[i]!='7'&&num[i]!='8'&&num[i]!='9'){
+					     alert("inValid NUmber");
+					    return;
+					}
+				}
+			       }
+                               if(email.indexOf('@')==-1||email.indexOf('.')==-1){
+					alert("Invalid email");
+					return;
+				}				
+                                document.write("hi"+"<br>");
+			}
+		</script>
+<head>
+<body>
+	<input type="text" id="name">User Name :</input><br>
+	<input type="text" id="ph_num">Ph_Num :</input><br>
+	<input type="text" id="email">Email :</input><br>
+        <input type="button" value="SUBMIT" onclick="check();"></input>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+		<script>
+			function validate(){
+			 un=document.getElementById("user").value;
+			p=document.getElementById("pwd").value;
+			if(un=="Aditya"&&p="Aditya"){
+			document.write("Welcome To Aditya");
+			}
+			else{
+			document.write("invalid username or password");
+			}
+			}
+		</script>
+</head>
+<body>
+UserName :<input type="text" id="user">
+Password : <input type="password" id="pwd">
+<input type="button" value="Log In" onclick="validate();">
+</body>
+</html>
